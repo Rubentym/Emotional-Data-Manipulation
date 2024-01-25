@@ -1,0 +1,14 @@
+import pandas as pd
+
+# Create a DataFrame with emotional data
+data = pd.DataFrame({
+    'Happiness Level': [70, 80, 90, 60, 85],
+    'Confusion Factor': [20, 15, 10, 25, 5],
+    'Sarcasm Quotient': [30, 25, 40, 15, 35]
+})
+
+# Add a touch of humor to the data
+data['Final Rating'] = data['Happiness Level'] - data['Confusion Factor'] + data['Sarcasm Quotient']
+
+# Display the humorously manipulated data
+print(data)
